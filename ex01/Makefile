@@ -1,0 +1,30 @@
+
+NAME = ex01
+CXX = c++
+CXXFLAGS= -Wall -Wextra -Werror -std=c++98
+SRCS = Bureaucrat.cpp main.cpp Form.cpp
+OBJS = $(SRCS:.cpp=.o)
+RM = rm -f
+rasslkhit = Bureaucrat.hpp Form.hpp
+
+
+all: $(NAME)
+
+
+$(NAME): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $@ $(OBJS)
+
+
+%.o: %.cpp $(rasslkhit)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+
+clean:
+	$(RM) $(OBJS)
+
+
+fclean: clean
+	$(RM) $(NAME)
+
+
+re: fclean all
