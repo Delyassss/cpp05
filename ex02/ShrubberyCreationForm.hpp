@@ -18,7 +18,8 @@
 #include <iostream>
 #include "Bureaucrat.hpp"
 
-class ShrubberyCreationForm : public AForm {
+class ShrubberyCreationForm : public AForm
+{
    private:
     std::string target;
 

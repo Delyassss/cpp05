@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Intern.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ildaboun <ildaboun@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 16:52:33 by ildaboun          #+#    #+#             */
-/*   Updated: 2025/12/04 18:30:56 by ildaboun         ###   ########.fr       */
+/*   Updated: 2025/12/04 19:27:00 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,11 @@ class Afrom;
 class Intern
 {
     public :
-        AForm *makeForm(std::string &form_name, std::string &target);
+        Intern();
+        ~Intern();
+        Intern(const Intern &other);
+        Intern &operator=(const Intern &other);
+        AForm *makeForm(std::string form_name, std::string target);
         AForm *makeShrub(std::string &target);
         AForm *makeRob(std::string &target);
         AForm *makePres(std::string &target);

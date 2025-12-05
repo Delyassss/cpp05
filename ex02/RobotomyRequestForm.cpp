@@ -42,7 +42,7 @@ void RobotomyRequestForm::execute(const Bureaucrat &executor) const
     {
         throw GradeTooLowException();
     }
-    std::cout << "VRRRRRRRRRRRRRRRRRR!!!!!! AHHHHHHHHHHHHHH HELLL ANAHH  WAAAHAT AREE DOINGGG ???????" << std::endl;
+    std::cout << "VRRRRRRRRRRRRRRRRRR!!!!!! AHHHHHHHHHHHHHH HELLL NAHH  WAAAHAT AREE DOINGGG ???????" << std::endl;
     int guessme;
     guessme = rand();
     if (guessme % 2 == 0)

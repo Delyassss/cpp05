@@ -21,25 +21,16 @@
 
 int main ()
 {
-    // std::srand(time(0)); // we manipulate the start needle by using the time (ofc because we don wanna start at the same point)
-    // Bureaucrat big("SBA3", 1);
-    // Bureaucrat mid("SB3A", 43);
-    // Bureaucrat small("DBA3", 150);
-    // ShrubberyCreationForm shrub("home");
-    // shrub.beSigned(mid);
-    // mid.executeForm(shrub);
-    // small.executeForm(shrub); // should throw an exception
-    // RobotomyRequestForm robot("Bender");
-    // robot.beSigned(big); // signed by big but mid will execute
-    // mid.executeForm(robot);
-    // PresidentialPardonForm pres("Nig**a");
-    // pres.beSigned(big);
-    // big.executeForm(pres);
-    // Intern slave;
-    // AForm *form;
-    // form = slave.makeForm("robotomy request", "Ilyass");
-    // mid.executeForm(form);
-    // delete form;
-    
-    
+    std::srand(time(0)); // we manipulate the start needle by using the time (ofc because we don wanna start at the same point)
+    Bureaucrat big("SBA3", 1);
+    Bureaucrat mid("SB3A", 43);
+    Intern slave;
+    AForm *form;
+    form = slave.makeForm("shrubbery creation", "Ilyass");
+    if (form)
+    {
+        form->beSigned(big);
+        mid.executeForm(*form);
+        delete form;
+    }
 }

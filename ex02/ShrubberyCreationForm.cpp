@@ -47,7 +47,7 @@ void ShrubberyCreationForm::execute(const Bureaucrat &executor) const
     s.open((target + "_shrubbery").c_str());
     if (!s.is_open())
     {
-        throw  std::ios_base::failure("Hey you have a problem with opening the file !");
+        throw  std::ios_base::failure("you have a problem with opening the file !");
     }
 
     s << "               O              " << std::endl;

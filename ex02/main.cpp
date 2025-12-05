@@ -20,7 +20,7 @@
 
 int main ()
 {
-    std::srand(time(0)); // we manipulate the start needle by using the time (ofc because we don wanna start at the same point)
+    std::srand(time(0)); // we manipulate the start needle by using the time (ofc because we dont wanna start at the same point)
     Bureaucrat big("SBA3", 1);
     Bureaucrat mid("SB3A", 43);
     Bureaucrat small("DBA3", 150);
