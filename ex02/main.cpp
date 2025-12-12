@@ -31,7 +31,7 @@ int main ()
     RobotomyRequestForm robot("Bender");
     robot.beSigned(big); // signed by big but mid will execute
     mid.executeForm(robot);
-    PresidentialPardonForm pres("Nig**a");
+    PresidentialPardonForm pres("SOLARIS");
     pres.beSigned(big);
     big.executeForm(pres);
     
